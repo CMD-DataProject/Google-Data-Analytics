@@ -350,7 +350,7 @@ The following bar chart outlines number of users by trip purposes categorized by
 ### 5. Share
 Dashboard can be downloaded from the following link:
 
-    ![PowerBI Dashboard](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/project_bikes_google.pbix)
+  ![project_bikes_google](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/project_bikes_google.pbix)
     
 ### 6. Act
 
