@@ -149,8 +149,8 @@ I noticed that there was not a standardised process set up for both years. The m
 ### 4. Analyze
 
 The analysis question is: 
-  > **How do annual members and casual riders use Cyclistic bikes differently?** <br>
-  
+  > **How do annual members and casual riders use Cyclistic bikes differently?** <be>
+
 To help answer this question, profiled the data to answer the following questions:
     
 #### :heavy_minus_sign: *What is the change between **Q1 2019** and **Q1 2019**?* 
@@ -347,6 +347,17 @@ The following bar chart outlines a number of users by trip purposes categorized 
     - *Q1 2019:* Low activity, as members tend to focus on regular travel rather than leisure.
     - *Q1 2020:* Activity remains minimal, reflecting a consistent lack of emphasis on tourism.
 
+There is a further statistical analysis performed with R which is located here:
+
+    >![Stats.R](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Stats.R)
+
+Worth highlighting the **Chi-squared analysis** done to understand if there is a statistically significant relationship between the variables *Day_Category* and *Member_Casual*. 
+  
+  - *Ho -Null Hypothesis-* there is no relationship between customer type and the type of the day.
+  - *H1* there is such relationship
+    
+The value of the statistic is 13,907, which indicates the observed data differs from what would be expected under the null hypothesis -if these variables are independent-. There is only one degree of freedom, as there are two categories for each variable -member and casual- and -weekend and weekday-. The P-value is very small, can be cosindered 0, so we reject the null hypothesis at any significance level of 0.01 or 0.05.  So this means that Members and Casual riders have different patterns of trip frequency on weekdays and weekend.
+    
 ### 5. Share
 Dashboard can be downloaded from the following link:
 
