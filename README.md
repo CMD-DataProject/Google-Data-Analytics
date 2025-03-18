@@ -6,9 +6,9 @@ The **Cyclistic Bike Share Case Study** is a *Capstone project* for the **Google
 
 ## :spiral_notepad: **Background**
 
-In this case study, you're a junior data analyst working for Cyclistic, a bike-share company in Chicago. Your team, led by the director of marketing, aims to increase the number of annual memberships. To achieve this, you need to understand the differences in usage patterns between casual riders and annual members. The goal is to design a marketing strategy to convert casual riders into annual members, backed by compelling data insights and visualizations. 
+In this case study, you're a junior data analyst working for Cyclistic, a bike-share company in Chicago. Your team, led by the marketing director, aims to increase the number of annual memberships. To achieve this, you need to understand the differences in usage patterns between casual riders and annual members. The goal is to design a marketing strategy to convert casual riders into annual members, backed by compelling data insights and visualizations. 
 
-***Cyclistic***, known for its inclusive bike options, has been successful in attracting a diverse user base, but the focus now is on driving future growth through annual memberships. Analyzing historical bike trip data will be key to identifying trends and making data-driven recommendations.
+***Cyclistic***, known for its inclusive bike options, has successfully attracted a diverse user base, but the focus now is on driving future growth through annual memberships. Analyzing historical bike trip data will be key to identifying trends and making data-driven recommendations.
 
 ## :hammer_and_wrench: **Approach**
 
@@ -34,17 +34,17 @@ In this case study, you're a junior data analyst working for Cyclistic, a bike-s
 
 * *Station Dataset*
 
-  - I used the latitude and the longitude to approximate map the start and end dock to a neighborhood in Chicago.
-  - These neighborhoods are taken from **Choose Chicago**, which is the official destination marketing organization for Chicago, list in their website https://www.choosechicago.com/neighborhoods/. <br>
-  - It also has been allocated each neighborhood to an area category based on online research: *tourist*, *residential*, *business*. As a result, the different routes can also be a combination of two categories.
+  - I used the latitude and the longitude to approximate map the start and end dock to a neighbourhood in Chicago.
+  - These neighbourhoods are taken from **Choose Chicago**, which is the official destination marketing organization for Chicago, listed in their website https://www.choosechicago.com/neighborhoods/. <br>
+  - It also has been allocated each neighbourhood to an area category based on online research: *tourist*, *residential*, *business*. As a result, the different routes can also be a combination of two categories.
   - Based on the **Route** the following variables have been included to explain further the data:
 
     - *Duration category* variable: allocated the ride to 5, 10, 15, 30, 60, 90, 120 minutes.
     - *Time of the day* variable: divides the day into the following time blocks:
 
       - *Morning* from 6:00 am to 12 pm.
-      - *Afternoon* from 12:00 pm to 18:00 pm.
-      - *Evening* from 18:00 pm to 12 am.
+      - *Afternoon* from 12:00 pm to 6:00 pm.
+      - *Evening* from 6:00 pm to 12 am.
       - *Afternoon* from 12:00 am to 6:00 am.
     
     **Note**:
@@ -55,7 +55,7 @@ In this case study, you're a junior data analyst working for Cyclistic, a bike-s
   
 * *Cleaned Dataset*
 
-  - *Table* 1 in the Appendix, includes the station docks ids and names mapped to a neighborhood (approximate based on the provided latitude and longitude) and also it has been categorized to a Tourist, Business or Residential. This has been added to explain further behaviours and trends.
+  - *Table* 1 in the Appendix, includes the station dock's id and names mapped to a neighbourhood (approximately based on the provided latitude and longitude) and also it has been categorized to a Tourist, Business or Residential. This has been added to explain further behaviours and trends.
   
   - *The Q1 2020* dataset and the *Q1 2019* have different labels for categorizing the user. As 2020 is the most recent one, the labelling has been remapped, hence Member (2020) = Subscriber (2019) and Casual (2020) = Customer (2019). Only the 2020 labels have been used in the headers hence *Member_casual* is the header with the unique values of *Member* and *Casual*.
 
@@ -92,7 +92,7 @@ The 2 tables  from ** Q1 2019 to Q1 2020 ** were appended into a single table wi
 
 * *Cleaned Dataset* consists of the following *13 variables*:
 
-I noticed that there was not a standarised process set up for both years. The main issue was related to the fact that the headers for these datasets were different. Also, the data type for the *ride_id* / *trip_id* was different as in one uses a combination of *text and numbers* and in the other had a *numeric* format, so the *trip_id* column was transformed to store *string* data.
+I noticed that there was not a standardised process set up for both years. The main issue was related to the fact that the headers for these datasets were different. Also, the data type for the *ride_id* / *trip_id* was different as one uses a combination of *text and numbers* and the other had a *numeric* format, so the *trip_id* column was transformed to store *string* data.
 
 | **Number** | **Variable**       | **Type** |
 |------------|--------------------|----------|
@@ -115,7 +115,7 @@ I noticed that there was not a standarised process set up for both years. The ma
 - **BigQuery** to run queries to:
   
   - Removing the trips with **null or blank values** and **duplicates** if any.
-  - Removing the rides with duration  **less than 5 minutes** and also any **rides with duration above 2 hours** as the battery life of Divvy e-bikes can vary depending on usage, but typically, the battery lasts for about 1.5 to 2 hours of continuous riding.
+  - Removing the rides with a duration  **less than 5 minutes** and also any **rides with a duration above 2 hours** as the battery life of Divvy e-bikes can vary depending on usage, but typically, the battery lasts for about 1.5 to 2 hours of continuous riding.
   - Adding in the following columns with code:
     
     - *Hour category*
@@ -128,7 +128,7 @@ I noticed that there was not a standarised process set up for both years. The ma
   - The column *trip_id* in **2019** had a *numeric* datatype which has been transformed to a *string* to keep it in line with **2020**.
   - The *Duration*.  
 
-- **PowerQuery** used to trim data and also to group all columns in both tables to guarantee the uniquenes of each row, and also, to benefit the analysis in later stages.
+- **PowerQuery** used to trim data and also to group all columns in both tables to guarantee the uniqueness of each row, and also, to benefit the analysis in later stages.
 
 #### :heavy_minus_sign: Data Combination.
 
@@ -182,7 +182,7 @@ The figure below shows the **Percentage of Change from Q1 2019 to Q1 2020** in t
        
   * **Q1 2020**
     
-    - *Member:* Despite leading again, their overall numbers decline compared to 2019, hinting at external impacts.
+    - *Member:* Despite leading again, their overall numbers declined compared to 2019, hinting at external impacts.
     - *Casual:* Show slight growth in March but remain lower than members across all months. <br>
     
 - **Monthly Trends** <br>
@@ -198,11 +198,11 @@ The figure below shows the **Percentage of Change from Q1 2019 to Q1 2020** in t
     
   * **March** <br>
   
-    - *Member:* See a noticeable spike in March of both years, indicating seasonal or event-related influence..
+    - *Member:* See a noticeable spike in March of both years, indicating seasonal or event-related influence.
     - *Casual:* Exhibit a modest increase compared to previous months, potentially due to improving weather or holidays. <br>
     
 #### :heavy_minus_sign: *When do the users ride most: Weekdays or Weekends?*
-The figure below shows a breakdown by bikes hired categorized by type of users and weekends and weekdays.
+The figure below shows a breakdown of bikes hired categorized by type of users and weekends and weekdays.
 <div align="center">
 <br>
 <img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/3-Time_days.png">
@@ -218,7 +218,7 @@ The figure below shows a breakdown by bikes hired categorized by type of users a
   * *Member: (19.12%).* Members also show a noticeable share of weekend usage, highlighting consistent engagement even outside of workdays. This could reflect leisure or recreational purposes. <br>
   * *Casual: (5.49%.)* Casual users show a slightly higher percentage on weekends compared to weekdays, likely driven by recreational or occasional users taking advantage of free time. <br>
      
-#### :heavy_minus_sign: *What time of the day users hire bikes the most?*
+#### :heavy_minus_sign: *What time of the day do users hire bikes the most?*
 <div align="center">
 <br>
 <img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/4-Time-ridesbyTime%20of%20the%20day.png">
@@ -245,22 +245,22 @@ The figure below shows a breakdown by bikes hired categorized by type of users a
    * *Casual:* Very minimal activity, reflecting limited demand for late-night leisure rides.<br>
 </div>
 
-#### :heavy_minus_sign: *Which routes are the most popular by neighborhoods?*
-The following pie chart shows the top routes by neighborhood.
+#### :heavy_minus_sign: *Which routes are the most popular by neighbourhoods?*
+The following pie chart shows the top routes by neighbourhood.
 <div align="center">
 <br>
 <img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/5-route_areas.png">
 </div>
 
-The top routes take place in the following neighborhoods:
+The top routes take place in the following neighbourhoods:
 
 </div>
 
-- **Lincoln Park - Lincoln Park (35.01%):** Dominates as the most popular route, potentially reflecting recreational or short local trips within this neighborhood. 
-- **Logan Square - Logan Square (21.9%):** Significant in popularity, suggesting high local activity within this neighborhood, possibly among residents.    
-- **Loop - Loop (19.69%):** As a key central area, this route likely represents business commutes or short trips in the city center.
-- **Loop - West Loop (11.94%):** This is moderate popular route, indicating a strong connection between these two bustling neighborhoods.
-- **West Loop - Loop (11.46%):** Mirroring the previous route, the near-equal percentage demonstrates mutual traffic flow between these neighborhoods.
+- **Lincoln Park - Lincoln Park (35.01%):** Dominates as the most popular route, potentially reflecting recreational or short local trips within this neighbourhood. 
+- **Logan Square - Logan Square (21.9%):** Significant in popularity, suggesting high local activity within this neighbourhood, possibly among residents.    
+- **Loop - Loop (19.69%):** As a key central area, this route likely represents business commutes or short trips in the city centre.
+- **Loop - West Loop (11.94%):** This is a moderately popular route, indicating a strong connection between these two bustling neighbourhoods.
+- **West Loop - Loop (11.46%):** Mirroring the previous route, the near-equal percentage demonstrates mutual traffic flow between these neighbourhoods.
 
 #### :heavy_minus_sign: *Which ones are the top Routes?* 
 The following table shows the most popular routes.
@@ -275,7 +275,7 @@ The following table shows the most popular routes.
     - The **"Lake Shore Dr & Monroe St - Lake Shore Dr & Monroe St"** route is again the most used by members, though significantly outnumbered by casual users.
     - Member usage appears steady but less prominent, possibly reflecting structured commuting rather than leisure trips.
   
-  * *Casual:* Casual users dominate the usage of most routes in this year.
+  * *Casual:* Casual users dominate the usage of most routes this year.
     - The **"Lake Shore Dr & Monroe St - Lake Shore Dr & Monroe St"** route has the highest casual user count, suggesting it is a prime choice for recreational or scenic travel.
     - Other popular routes like **"Streeter Dr & Grand Ave - Streeter Dr & Grand Ave"** also indicate high casual rider activity, likely due to accessibility and proximity to popular destinations.
 
@@ -285,14 +285,14 @@ The following table shows the most popular routes.
     - The **"Lake Shore Dr & Monroe St - Lake Shore Dr & Monroe St"** route continues to lead in member activity, suggesting a mix of commuting and regular travel habits.
     - Routes like **"Michigan Ave & Oak St - Michigan Ave & Oak St"** exhibit steady member usage, possibly for routine or work-related trips.
   
-  * *Casual:* Casual users dominate the usage of most routes in this year.
+  * *Casual:* Casual users dominate the usage of most routes this year.
     - The **"Lake Shore Dr & Monroe St - Lake Shore Dr & Monroe St"** route has the highest casual user count, suggesting it is a prime choice for recreational or scenic travel.
     - Other popular routes like **"Streeter Dr & Grand Ave - Streeter Dr & Grand Ave"** also indicate high casual rider activity, likely due to accessibility and proximity to popular destinations.
 
 **"Lake Shore Dr & Monroe St - Lake Shore Dr & Monroe St"** is consistently the most popular route across both years and user groups, highlighting its significance.
 
 #### :heavy_minus_sign: *Route User Overview* 
-The following bar chart outlines number of users by trip purposes categorized by *Residential*, *Business*, *Tourist*.
+The following bar chart outlines a number of users by trip purposes categorized by *Residential*, *Business*, *Tourist*.
 
 <div align="center">
 <br>
