@@ -211,14 +211,14 @@ The figure below shows a breakdown by bikes hired categorized by type of users a
 - **Weekday** <br>
 
   * *Member: (69.19%).* A significant majority of hires come from members during weekdays. This suggests that members predominantly use bikes for commuting or regular weekday routines.<br>      
-  * *Casual: (5.49%).* Casual hires during weekdays are quite minimal, indicating that they are less likely to use bikes for weekday activities.<br>
+  * *Casual: (6.19%).* Casual hires during weekdays are quite minimal, indicating that they are less likely to use bikes for weekday activities.<br>
     
 - **Weekdend** <br>
 
   * *Member: (19.12%).* Members also show a noticeable share of weekend usage, highlighting consistent engagement even outside of workdays. This could reflect leisure or recreational purposes. <br>
-  * *Casual: (6.19%.)* Casual users show a slightly higher percentage on weekends compared to weekdays, likely driven by recreational or occasional users taking advantage of free time. <br>
+  * *Casual: (5.49%.)* Casual users show a slightly higher percentage on weekends compared to weekdays, likely driven by recreational or occasional users taking advantage of free time. <br>
      
-#### :heavy_minus_sign: *What time of the day the users use more bikes the most?*
+#### :heavy_minus_sign: *What time of the day users hire bikes the most?*
 <div align="center">
 <br>
 <img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/4-Time-ridesbyTime%20of%20the%20day.png">
