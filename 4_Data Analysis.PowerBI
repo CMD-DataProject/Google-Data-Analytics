@@ -1,0 +1,104 @@
+-- PowerBI --
+
+Tables were created in the Data Clean and Station workbooks to import them into PowerBI. These have been labeled as 'Append11' and 'station_data'
+They have a relationship many to one. The dock IDs are the keys between these databases.
+
+-- Create new columns and metrics to improve the analysis.
+
+--- Metrics:
+
+      -- Change from Q1 2019 to Q1 2020.
+      
+        %Change_YoY = 
+            FORMAT(
+                DIVIDE(
+                    CALCULATE(SUM('Append11'[count]), 'Append11'[year] = 2020) - CALCULATE(SUM('Append11'[count]), 'Append11'[year] = 2019),
+                    CALCULATE(SUM('Append11'[count]), 'Append11'[year] = 2019),
+                    0
+                ),
+                "0.00%"
+            )
+      
+        %Change_Duration_YoY = 
+            FORMAT(
+                DIVIDE(
+                    CALCULATE(SUM('Append11'[count]), 'Append11'[year] = 2020) - CALCULATE(SUM('Append11'[count]), 'Append11'[year] = 2019),
+                    CALCULATE(SUM('Append11'[count]), 'Append11'[year] = 2019),
+                    0
+                ),
+                "0.00%"
+            )
+      
+      -- % Change Casual and % Change Members: calculates the change in these users with respect previous quarter:
+      
+        %_Change_Member = 
+        FORMAT(
+            DIVIDE(
+                CALCULATE(SUM('Append11'[count]), 'Append11'[year] = 2020 , Append11[member_casual] = "Member") 
+                - 
+                CALCULATE(SUM('Append11'[Count]), 'Append11'[year] = 2019, Append11[member_casual] = "Member"),
+                CALCULATE(SUM('Append11'[count]), 'Append11'[year] = 2020, Append11[member_casual] = "Member"),
+                0
+            ),
+            "0.00%"
+        )
+      
+          %_Change_Casual = 
+          FORMAT(
+              DIVIDE(
+                  CALCULATE(SUM(Append11[count]), Append11[year] = 2020, Append11[member_casual] = "Casual") 
+                  - 
+                  CALCULATE(SUM(Append11[count]), Append11[year] = 2019, Append11[member_casual] = "Casual"),
+                  CALCULATE(SUM(Append11[count]), Append11[year] = 2019, Append11[member_casual] = "Casual"),
+                  0
+              ),
+              "0.00%"
+          )
+
+--- New Columns to explore further the data:
+
+   -- Route: this populates the names from the start point to the end point.
+
+      Route = Append11[start_station_name]&" - "&Append11[end_station_name]
+
+  -- Area Category: this allocates these docks to a area which can be Business, Residential or Turism.
+
+      area_cat = 
+          COALESCE(
+              LOOKUPVALUE(
+                  station_data[start_category],
+                  station_data[start_station_id],
+                  Append11[start_station_id]
+              ),
+              "Unknown Start Area"
+          ) & " - " & 
+          COALESCE(
+              LOOKUPVALUE(
+                  station_data[end_category],
+                  station_data[end_station_id],
+                  Append11[end_station_id]
+              ),
+              "Unknown End Area"
+          )
+
+  -- Area Commute: populate the routes by Chicago Neighbourhoods.
+
+      area_commute = 
+      LOOKUPVALUE(
+          station_data[start_area], 
+          station_data[start_station_id], 
+          Append11[start_station_id]
+      ) & " - " & 
+      LOOKUPVALUE(
+          station_data[end_area], 
+          station_data[end_station_id], 
+          Append11[end_station_id]
+      )
+
+  -- Added an extra category to improve the visuals.
+
+    Q1 Year = "Q1 " & [year]
+
+  -- Counted the how many times the route repeats to check the visual results.
+
+    Count_Route = CALCULATE(COUNT(Append11[Route]), ALLEXCEPT(Append11, Append11[Route]))
