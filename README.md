@@ -348,20 +348,18 @@ The following bar chart outlines a number of users by trip purposes categorized 
     - *Q1 2019:* Low activity, as members tend to focus on regular travel rather than leisure.
     - *Q1 2020:* Activity remains minimal, reflecting a consistent lack of emphasis on tourism.
 
-There is a further statistical analysis performed with R which is located here:
-
-    >![Stats.R](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Stats.R)
+There is a further statistical analysis performed with R which is located here:[Stats.R](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Stats.R)
 
 Worth highlighting the **Chi-squared analysis** done to understand if there is a statistically significant relationship between the variables *Day_Category* and *Member_Casual*. 
   
   - *Ho -Null Hypothesis-* there is no relationship between customer type and the type of the day.
-  - *H1* there is such relationship
+  - *H1* there is such a relationship
     
-The value of the statistic is 13,907, which indicates the observed data differs from what would be expected under the null hypothesis -if these variables are independent-. There is only one degree of freedom, as there are two categories for each variable -member and casual- and -weekend and weekday-. The P-value is very small, can be cosindered 0, so we reject the null hypothesis at any significance level of 0.01 or 0.05.  So this means that Members and Casual riders have different patterns of trip frequency on weekdays and weekend.
+The value of the statistic is 13,907, which indicates the observed data differs from what would be expected under the null hypothesis -if these variables are independent-. There is only one degree of freedom, as there are two categories for each variable -member and casual- and -weekend and weekday-. The P-value is very small, and can be considered 0, so we reject the null hypothesis at any significance level of 0.01 or 0.05.  So this means that Members and Casual riders have different patterns of trip frequency on weekdays and weekends.
     
 ### 5. Share
-Dashboard can be downloaded from the following link:[project_bikes_google](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/project_bikes_google.pbix)
-    
+The dashboard can be downloaded from the following link:[project_bikes_google](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/project_bikes_google.pbix)
+
 ### 6. Act
 
 **Cyclistic Membership Marketing Strategies**
@@ -379,7 +377,7 @@ Based on the analysis, we propose the following strategies to convert casual rid
 
 - **Membership Loyalty Points System**
   Introduce a loyalty program where members earn points for each ride. Points can be redeemed for:
-  - Discounts in local business or attactions.
+  - Discounts in local businesses or attractions.
   - Membership discounts
   - Other exclusive rewards
 
@@ -390,17 +388,17 @@ Based on the analysis, we propose the following strategies to convert casual rid
   - Extended ride durations for members.
     
 - **Social Media Engagement: Utilize social media platforms to:**  
-  - Find well known social media embassadors within the travel and cycling sector.
+  - Find well-known social media ambassadors within the travel and cycling sector.
   - Share success stories and testimonials from Cyclistic members.
   - Post visually appealing content showcasing the joy of cycling.
   - Highlight membership benefits through user-generated content.
 
 ## **7-Conclusion**
 
-One main point for this dataset is the impact of the **Covid-19 Pandemic**.
+One main point for this dataset is the impact of the **COVID-19 pandemic**.
 
 - * *Casual Users*. There is a significant decline aligned with the travel restrictions, non-essential travel and lockdowns. These reduced travel and leisure activities.
-- * *Members*. Overall, remained consistent with only minor reductions compared to the casual users. This could be possible because these subscriptors use this service for their regular commute to work and this considered *essential* and they can not work from home. This can be proved as the key time blocks are mornings and evenings -considered commuting hours- showed limited changes in their travel behaviour.
+- * *Members*. Overall, remained consistent with only minor reductions compared to the casual users. This could be possible because these subscribers use this service for their regular commute to work and this is considered *essential* and they can not work from home. This can be proved as the key time blocks are mornings and evenings -considered commuting hours- showed limited changes in their travel behaviour.
   
   
 ## **8-Appendix**
