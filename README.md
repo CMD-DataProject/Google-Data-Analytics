@@ -34,18 +34,18 @@ In this case study, you're a junior data analyst working for Cyclistic, a bike-s
 
 * *Station Dataset*
 
-- I used the latitide and the longitude to approximate map the start and end dock to a neighborhood in Chicago.
-- These neighborhoods are taken from **Choose Chicago** , which is the official destination marketing organization for Chicago, list them in their website https://www.choosechicago.com/neighborhoods/. <br>
-- It also has been allocated each neighborhood to a area category based on online research: *tourist*, *residential*, *business*. As a result, the different routes can also be a combination of two categories.
-- Based on the **Route** the following variables have been included to explain further the data:
+  - I used the latitide and the longitude to approximate map the start and end dock to a neighborhood in Chicago.
+  - These neighborhoods are taken from **Choose Chicago** , which is the official destination marketing organization for Chicago, list them in their website https://www.choosechicago.com/neighborhoods/. <br>
+  - It also has been allocated each neighborhood to a area category based on online research: *tourist*, *residential*, *business*. As a result, the different routes can also be a combination of two categories.
+  - Based on the **Route** the following variables have been included to explain further the data:
 
-  - *Duration category* variable: allocated the ride to 5, 10, 15, 30, 60, 90, 120 minutes.
-  - *Time of the day* variable: divides the day into the following time blocks:
+    - *Duration category* variable: allocated the ride to 5, 10, 15, 30, 60, 90, 120 minutes.
+    - *Time of the day* variable: divides the day into the following time blocks:
 
-    - *Morning* from 6:00am to 12 pm.
-    - *Afternoon* from 12:00 pm to 18:00 pm.
-    - *Evening* from 18:00 pm to 12 am.
-    - *Afternoon* from 12:00 am to 6:00 am.
+      - *Morning* from 6:00am to 12 pm.
+      - *Afternoon* from 12:00 pm to 18:00 pm.
+      - *Evening* from 18:00 pm to 12 am.
+      - *Afternoon* from 12:00 am to 6:00 am.
     
     **Note**:
     If the ride takes place transitioning from one block to another, It would be categorised as so. For example, if the ride starts at 23:00 and finish at 1:00           am, would be categorised as *Evening-Night*. In the same way:
@@ -55,9 +55,9 @@ In this case study, you're a junior data analyst working for Cyclistic, a bike-s
   
 * *Cleaned Dataset*
 
-- *Table* 1 in the Appendix, includes the station docks ids and names mapped to a neighborhood (approximate based on the provided latitude and longitude) and also it has been categorized to a Tourist, Business or Residential. This has been added to explain further behaviours and trends.
-
-- *The Q1 2020* dataset and the *Q1 2019* have different labels for categorizing the user. As 2020 is the most recent one, the labelling has been remapped, hence Member (2020) = Subscriber (2019) and Casual (2020) = Customer (2019). Only the 2020 labels have been used in the headers hence *Member_casual* is the header with the unique values of *Member* and *Casual*.
+  - *Table* 1 in the Appendix, includes the station docks ids and names mapped to a neighborhood (approximate based on the provided latitude and longitude) and also it has been categorized to a Tourist, Business or Residential. This has been added to explain further behaviours and trends.
+  
+  - *The Q1 2020* dataset and the *Q1 2019* have different labels for categorizing the user. As 2020 is the most recent one, the labelling has been remapped, hence Member (2020) = Subscriber (2019) and Casual (2020) = Customer (2019). Only the 2020 labels have been used in the headers hence *Member_casual* is the header with the unique values of *Member* and *Casual*.
 
 ### 3. Process
 
