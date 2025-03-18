@@ -130,7 +130,7 @@ I noticed that there was not a standarised process set up for both years. The ma
 
 - **PowerQuery** used to trim data and also to group all columns in both tables to guarantee the uniquenes of each row, and also, to benefit the analysis in later stages.
 
-#### :heavy_minus_sign:### Data Combination.
+#### :heavy_minus_sign: Data Combination.
 
 - **PowerBI**
   
@@ -159,7 +159,7 @@ The figure below shows the **Percentage of Change from Q1 2019 to Q1 2020** in t
 
 <div align="center">
 <br>
-<img src="https://github.com/CMD-DataProject/Google-Capstone-Cycle-Bikes/blob/main/Images/metrics.png">
+<img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/1-metrics.png">
 </div>
 <br>
 
@@ -170,7 +170,7 @@ The figure below shows the **Percentage of Change from Q1 2019 to Q1 2020** in t
 #### :heavy_minus_sign: *Time Insights*
 <div align="center">
 <br>
-<img src="https://github.com/CMD-DataProject/Google-Capstone-Cycle-Bikes/blob/main/Images/time-insights.png">
+<img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/2-time-insights.png">
 </div>
 <br>
 
@@ -205,7 +205,7 @@ The figure below shows the **Percentage of Change from Q1 2019 to Q1 2020** in t
 The figure below shows a breakdown by bikes hired categorized by type of users and weekends and weekdays.
 <div align="center">
 <br>
-<img src="https://github.com/CMD-DataProject/Google-Capstone-Cycle-Bikes/blob/main/Images/Time_days.png">
+<img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/3-Time_days.png">
 </div>
 
 - **Weekday** <br>
@@ -221,7 +221,7 @@ The figure below shows a breakdown by bikes hired categorized by type of users a
 #### :heavy_minus_sign: *What time of the day the users use more bikes the most?*
 <div align="center">
 <br>
-<img src="https://github.com/CMD-DataProject/Google-Capstone-Cycle-Bikes/blob/main/Images/Time-ridesbyTime%20of%20the%20day.png">
+<img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/4-Time-ridesbyTime%20of%20the%20day.png">
 </div>
 
 - **Morning** <br>
@@ -249,7 +249,7 @@ The figure below shows a breakdown by bikes hired categorized by type of users a
 The following pie chart shows the top routes by neighborhood.
 <div align="center">
 <br>
-<img src="https://github.com/CMD-DataProject/Google-Capstone-Cycle-Bikes/blob/main/Images/route_areas.png">
+<img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/5-route_areas.png">
 </div>
 The top routes are:
 
@@ -265,7 +265,7 @@ The top routes are:
 The following table shows the most popular routes.
 <div align="center">
 <br>
-<img src="https://github.com/CMD-DataProject/Google-Capstone-Cycle-Bikes/blob/main/Images/route_list.png">
+<img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/6-route_list.png">
 </div>
 
 - **Q1 2019 Analysis:**
@@ -295,7 +295,7 @@ The following bar chart outlines number of users by trip purposes categorized by
 
 <div align="center">
 <br>
-<img src="https://github.com/CMD-DataProject/Google-Capstone-Cycle-Bikes/blob/main/Images/route_user.png">
+<img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/7-route_user.png">
 </div>
 
 - **Residential - Residential:**
@@ -347,7 +347,10 @@ The following bar chart outlines number of users by trip purposes categorized by
     - *Q1 2020:* Activity remains minimal, reflecting a consistent lack of emphasis on tourism.
 
 ### 5. Share
+Dashboard can be downloaded from the following link:
 
+    ![PowerBI Dashboard](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/project_bikes_google.pbix)
+    
 ### 6. Act
 
 **Cyclistic Membership Marketing Strategies**
