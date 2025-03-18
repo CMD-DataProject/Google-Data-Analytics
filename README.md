@@ -360,8 +360,7 @@ The value of the statistic is 13,907, which indicates the observed data differs 
     
 ### 5. Share
 Dashboard can be downloaded from the following link:
-
-  ![project_bikes_google](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/project_bikes_google.pbix)
+![project_bikes_google](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/project_bikes_google.pbix)
     
 ### 6. Act
 
