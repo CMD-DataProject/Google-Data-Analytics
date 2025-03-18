@@ -252,7 +252,7 @@ The following pie chart shows the top routes by neighborhood.
 <img src="https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/Images/5-route_areas.png">
 </div>
 
-The top routes are:
+The top routes take place in the following neighborhoods:
 
 </div>
 
