@@ -55,7 +55,7 @@ In this case study, you're a junior data analyst working for Cyclistic, a bike-s
   
 * *Cleaned Dataset*
 
-  - *Table* 1 in the Appendix, includes the station dock's id and names mapped to a neighbourhood (approximately based on the provided latitude and longitude) and also it has been categorized to a Tourist, Business or Residential. This has been added to explain further behaviours and trends.
+  - *Table* 1 in the Appendix, includes the station dock's ID and names mapped to a neighbourhood (approximately based on the provided latitude and longitude) and also it has been categorized as Tourist, Business or Residential. This has been added to explain further behaviours and trends.
   
   - *The Q1 2020* dataset and the *Q1 2019* have different labels for categorizing the user. As 2020 is the most recent one, the labelling has been remapped, hence Member (2020) = Subscriber (2019) and Casual (2020) = Customer (2019). Only the 2020 labels have been used in the headers hence *Member_casual* is the header with the unique values of *Member* and *Casual*.
 
