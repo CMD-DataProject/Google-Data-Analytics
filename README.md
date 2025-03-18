@@ -359,8 +359,7 @@ Worth highlighting the **Chi-squared analysis** done to understand if there is a
 The value of the statistic is 13,907, which indicates the observed data differs from what would be expected under the null hypothesis -if these variables are independent-. There is only one degree of freedom, as there are two categories for each variable -member and casual- and -weekend and weekday-. The P-value is very small, can be cosindered 0, so we reject the null hypothesis at any significance level of 0.01 or 0.05.  So this means that Members and Casual riders have different patterns of trip frequency on weekdays and weekend.
     
 ### 5. Share
-Dashboard can be downloaded from the following link:
-![project_bikes_google](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/project_bikes_google.pbix)
+Dashboard can be downloaded from the following link:[project_bikes_google](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/project_bikes_google.pbix)
     
 ### 6. Act
 
@@ -398,8 +397,9 @@ Based on the analysis, we propose the following strategies to convert casual rid
 ## **7-Conclusion**
 
 One main point for these dataset is the impact of the **Covid-19 Pandemic**.
-- **Casual Users. There is a significant decline aligned with the travel restrictions, non-essential travel and lockdowns. These reduced travel and leisure activities.
-- **Members. Overall, remained consistent with only minor reductions compared to the casual users. This could be possible because these subscriptors use this service for their regular commute to work and this considered *essential* and they can not work from home. This can be proved as the key time blocks are mornings and evenings -considered commuting hours- showed limited changes in their travel behaviour.
+
+- * *Casual Users**. There is a significant decline aligned with the travel restrictions, non-essential travel and lockdowns. These reduced travel and leisure activities.
+- * *Members**. Overall, remained consistent with only minor reductions compared to the casual users. This could be possible because these subscriptors use this service for their regular commute to work and this considered *essential* and they can not work from home. This can be proved as the key time blocks are mornings and evenings -considered commuting hours- showed limited changes in their travel behaviour.
   
   
 ## **8-Appendix**
