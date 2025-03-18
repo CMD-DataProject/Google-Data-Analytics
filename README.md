@@ -62,11 +62,10 @@ In this case study, you're a junior data analyst working for Cyclistic, a bike-s
 ### 3. Process
 
 The analysis has been saved in the following paths:
-
-1) [Data Combining]
-2) [Data Exploration]
-3) [Data Cleaning]
-4) [Data Analysis]
+1) [Data Combining](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/1_Data%20Combining.SQL)
+2) [Data Exploration](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/2_Data%20Exploration.SQL)
+3) [Data Cleaning](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/3_Data%20Cleaning.SQL)
+4) [Data Analysis](https://github.com/CMD-DataProject/Google-Data-Analytics/blob/main/4_Data%20Analysis.PowerBI)
 
 #### :heavy_minus_sign: Data Combination.
 
