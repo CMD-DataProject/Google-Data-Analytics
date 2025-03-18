@@ -2,7 +2,7 @@
 
 ## :black_nib: **Introduction**
 
-The **Cyclistic Bike Share Case Study** is a *Capstone project* for the **Google Data Analytics Professional Certificate** on Coursera. The key of this project is following the data analysis process, studied from the course: <ins>ask, prepare, process, analyze, share and act</ins> to analyze the dataset. 
+The **Cyclistic Bike Share Case Study** is a *Capstone project* for the **Google Data Analytics Professional Certificate** on Coursera. The key of this project is following the data analysis process, studied from the course: **Ask**, **Prepare**, **Process**, **Analyze**, **Share** and **Act** to analyze the dataset. 
 
 ## :spiral_notepad: **Background**
 
@@ -29,6 +29,7 @@ In this case study, you're a junior data analyst working for Cyclistic, a bike-s
 * Data cleaning & processing - Big Query, Excel and PowerQuery.
 * Data transformation: PowerQuery.
 * Data visualization: PowerBI.
+* Statistical Analysis: R.
 
 #### :heavy_minus_sign: Assumptions.
 
