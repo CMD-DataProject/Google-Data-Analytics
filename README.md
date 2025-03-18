@@ -34,21 +34,21 @@ In this case study, you're a junior data analyst working for Cyclistic, a bike-s
 
 * *Station Dataset*
 
-  - I used the latitide and the longitude to approximate map the start and end dock to a neighborhood in Chicago.
-  - These neighborhoods are taken from **Choose Chicago** , which is the official destination marketing organization for Chicago, list them in their website https://www.choosechicago.com/neighborhoods/. <br>
-  - It also has been allocated each neighborhood to a area category based on online research: *tourist*, *residential*, *business*. As a result, the different routes can also be a combination of two categories.
+  - I used the latitude and the longitude to approximate map the start and end dock to a neighborhood in Chicago.
+  - These neighborhoods are taken from **Choose Chicago**, which is the official destination marketing organization for Chicago, list in their website https://www.choosechicago.com/neighborhoods/. <br>
+  - It also has been allocated each neighborhood to an area category based on online research: *tourist*, *residential*, *business*. As a result, the different routes can also be a combination of two categories.
   - Based on the **Route** the following variables have been included to explain further the data:
 
     - *Duration category* variable: allocated the ride to 5, 10, 15, 30, 60, 90, 120 minutes.
     - *Time of the day* variable: divides the day into the following time blocks:
 
-      - *Morning* from 6:00am to 12 pm.
+      - *Morning* from 6:00 am to 12 pm.
       - *Afternoon* from 12:00 pm to 18:00 pm.
       - *Evening* from 18:00 pm to 12 am.
       - *Afternoon* from 12:00 am to 6:00 am.
     
     **Note**:
-    If the ride takes place transitioning from one block to another, It would be categorised as so. For example, if the ride starts at 23:00 and finish at 1:00           am, would be categorised as *Evening-Night*. In the same way:
+    If the ride transitions from one block to another, It would be categorised as so. For example, if the ride starts at 23:00 and finishes at 1:00 am, would be categorised as *Evening-Night*. In the same way:
     
     - *Day category* variable: allocates the **route** in *weekend* and *weekday* and also, in a similar way, would flag the transition between types.
     - *Month and Day Category* variables: which month the **route** happened and also, will state the transition between months.
