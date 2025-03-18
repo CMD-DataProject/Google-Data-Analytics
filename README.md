@@ -35,9 +35,9 @@ In this case study, you're a junior data analyst working for Cyclistic, a bike-s
 * *Station Dataset*
 
 - I used the latitide and the longitude to approximate map the start and end dock to a neighborhood in Chicago.
-- *These neighborhoods are taken from **Choose Chicago** , which is the official destination marketing organization for Chicago, list them in their website https://www.choosechicago.com/neighborhoods/. <br>
-- *It also has been allocated each neighborhood to a area category based on online research: *tourist*, *residential*, *business*. As a result, the different routes can also be a combination of two categories.
-- *Based on the **Route** the following variables have been included to explain further the data:
+- These neighborhoods are taken from **Choose Chicago** , which is the official destination marketing organization for Chicago, list them in their website https://www.choosechicago.com/neighborhoods/. <br>
+- It also has been allocated each neighborhood to a area category based on online research: *tourist*, *residential*, *business*. As a result, the different routes can also be a combination of two categories.
+- Based on the **Route** the following variables have been included to explain further the data:
 
   - *Duration category* variable: allocated the ride to 5, 10, 15, 30, 60, 90, 120 minutes.
   - *Time of the day* variable: divides the day into the following time blocks:
