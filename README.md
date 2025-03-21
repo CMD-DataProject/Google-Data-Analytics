@@ -49,7 +49,7 @@ In this case study, you're a junior data analyst working for Cyclistic, a bike-s
       - *Afternoon* from 12:00 am to 6:00 am.
     
     **Note**:
-    If the ride transitions from one block to another, It would be categorised as so. For example, if the ride starts at 23:00 and finishes at 1:00 am, would be categorised as *Evening-Night*. In the same way:
+    If the ride transitions from one block to another, It would be categorised as so. For example, if the ride starts at 23:00 and finishes at 1:00 am, would be classified as *Evening-Night*. In the same way:
     
     - *Day category* variable: allocates the **route** in *weekend* and *weekday* and also, in a similar way, would flag the transition between types.
     - *Month and Day Category* variables: which month the **route** happened and also, will state the transition between months.
@@ -70,7 +70,7 @@ The analysis has been saved in the following paths:
 
 #### :heavy_minus_sign: Data Combination.
 
-The 2 tables  from ** Q1 2019 to Q1 2020 ** were appended into a single table with a total of **791,958** rows.
+The 2 tables  from **Q1 2019 to Q1 2020** were appended into a single table with a total of **791,958** rows.
 
 #### :heavy_minus_sign: Data Exploring.
 
