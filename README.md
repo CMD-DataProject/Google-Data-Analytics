@@ -391,8 +391,8 @@ Based on the analysis, we propose the following strategies to convert casual rid
 
 One main point for this dataset is the impact of the **COVID-19 pandemic**.
 
-- * *Casual Users*. There is a significant decline aligned with the travel restrictions, non-essential travel and lockdowns. These reduced travel and leisure activities.
-- * *Members*. Overall, remained consistent with only minor reductions compared to the casual users. This could be possible because these subscribers use this service for their regular commute to work and this is considered *essential* and they can not work from home. This can be proved as the key time blocks are mornings and evenings -considered commuting hours- showed limited changes in their travel behaviour.
+- * Casual Users*. There is a significant decline aligned with the travel restrictions, non-essential travel and lockdowns. These reduced travel and leisure activities.
+- *Members*. Overall, remained consistent with only minor reductions compared to the casual users. This could be possible because these subscribers use this service for their regular commute to work and this is considered *essential* and they can not work from home. This can be proved as the key time blocks are mornings and evenings -considered commuting hours- showed limited changes in their travel behaviour.
   
   
 ## **8-Appendix**
