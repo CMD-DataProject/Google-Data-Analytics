@@ -93,7 +93,7 @@ The 2 tables  from **Q1 2019 to Q1 2020** were appended into a single table with
 
 * *Cleaned Dataset* consists of the following *13 variables*:
 
-I noticed that there was not a standardised process set up for both years. The main issue was related to the fact that the headers for these datasets were different. Also, the data type for the *ride_id* / *trip_id* was different as one uses a combination of *text and numbers* and the other had a *numeric* format, so the *trip_id* column was transformed to store *string* data.
+I noticed that  was no standardised process set up for either year. The main issue was related to the fact that the headers for these datasets were different. Also, the data type for the ride_id* / trip_id* was different, as one uses a combination of text and numbers, and the other has a numeric format, so the trip_id* column was transformed to store string data.
 
 | **Number** | **Variable**       | **Type** |
 |------------|--------------------|----------|
@@ -116,17 +116,18 @@ I noticed that there was not a standardised process set up for both years. The m
 - **BigQuery** to run queries to:
   
   - Removing the trips with **null or blank values** and **duplicates** if any.
-  - Removing the rides with a duration  **less than 5 minutes** and also any **rides with a duration above 2 hours** as the battery life of Divvy e-bikes can vary depending on usage, but typically, the battery lasts for about 1.5 to 2 hours of continuous riding.
-  - Adding in the following columns with code:
+  - Adding in the following columns, in line with the assumptions, with code:
     
     - *Hour category*
     - *Day category*
     - *Month category*
+    - *Duration*,  as the difference between end and start times, in minutes
     - *Duration category*
-      
+  
+  - Removing the rides with a duration  **less than 5 minutes** and also, any **rides with a duration above       2 hours** as the battery life of Divvy e-bikes can vary depending on usage, but typically, the battery       lasts for about 1.5 to 2 hours of continuous riding.    
   - The headers from **2019** file was transformed to keep it in line with the **2020** version.
   - The column *usertype* in **2019** has been transformed to keep it in line with the **2020** data.
-  - The column *trip_id* in **2019** had a *numeric* datatype which has been transformed to a *string* to keep it in line with **2020**.
+  - The column *trip_id* in **2019** had a *numeric* datatype which has been transformed to a *string* to         keep it in line with **2020**.
   - The *Duration*.  
 
 - **PowerQuery** used to trim data and also to group all columns in both tables to guarantee the uniqueness of each row, and also, to benefit the analysis in later stages.
@@ -136,14 +137,7 @@ I noticed that there was not a standardised process set up for both years. The m
 - **PowerBI**
   
   - Reviewed the data types.
-  - Adding in the following columns with code:
-    
-    - *Hour category* 
-    - *Day category* 
-    - *Month category*
-    - *Duration category* - This has been ca
-    - *Q1 Year*
-
+  - Added the columns *Route*, *area_cat*, *area_commute* and *Q1 Year*
   - The column "ride id" was deleted as caused errors. This does not an issue for the analysis.  
   - Total rows after the cleaning stage: **571,697** rows.
   
